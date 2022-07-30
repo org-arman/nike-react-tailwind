@@ -36,6 +36,9 @@
           px-4
           text-lg text-gray-700
           bg-white
+          md:relative
+          fixed
+          bottom-0
         "
       >
        <div>
@@ -106,9 +109,11 @@
             />
           </svg>
        
-       <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+       <div class="hidden w-full md:flex md:items-center md:w-auto absolute left-0 px-8 md:mx-0 bg-blue-300 md:bg-white md:rounded-none md:bottom-0 rounded-t-xl bottom-14 md:relative" id="menu">
           <ul
             class="
+            grid
+            grid-cols-3
               pt-4
               text-base text-gray-700
               md:flex
