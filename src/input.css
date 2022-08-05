@@ -4,14 +4,12 @@
 
 
 @layer utilities {
+    
     body {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Press Start 2P', cursive;
     }
 
-    .hero {
-        clip-path: polygon(0 0, 100% 0, 100% 37%, 0% 100%);
-    }
-
+ 
 
 
     /* ---- reset ---- */
@@ -26,7 +24,7 @@
     #particles-js {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 60%;
         left: 0;
         background-color: #232741;
 
