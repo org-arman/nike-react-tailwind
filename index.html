@@ -7,25 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arman Ali Khan</title>
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/00561b492d88a5287a5def1e83a34882?family=Gumela" rel="stylesheet" type="text/css"/>
   <!-- Link of css -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 
-<body class="bg-slate-900 text-white">
+<body class="bg-slate-900 text-white" id="particles-js">
   <main>
     <header id="home">
-      <nav>
+      <nav class="fixed w-full top-0 bg-slate-800">
         <div class="container mx-auto">
           <div class="flex my-4">
             <div>
               <a href="#"> <img src="./images/logo.png" class="w-4/12" alt=""></a>
             </div>
             <div class="flex justify-center items-center">
-              <ul class="flex justify-between items-center gap-4 text-xs ">
+              <ul class="flex justify-between items-center gap-4">
                 <li><a class="hover:text-blue-500" href="#home">Home </a></li>
                 <li><a class="hover:text-blue-500" href="#about">About </a></li>
                 <li><a class="hover:text-blue-500" href="#project">Projects </a></li>
@@ -35,10 +34,10 @@
           </div>
         </div>
       </nav>
-      <section>
-        <div class="container mx-auto flex justify-between items-center my-20">
+      <section class="mt-20 ">
+        <div class="container mx-auto flex justify-around items-center my-20">
           <div>
-            <h2 class="text-3xl">Hi, I'm <br> <br><span class="text-5xl text-blue-400 font-thin">Arman Khan</span></h2>
+            <h2 class="text-2xl">Hi, I'm  <br><span class="text-6xl  text-blue-400">Arman Khan</span></h2>
           </div>
           <div>
             <img src="./images/hero.png" class="w-5/6" alt="">
@@ -51,37 +50,142 @@
       <div class="container mx-auto my-20">
         <div>
           <div>
-            <h2 class="text-3xl text-center">About Me</h2>
+            <h2 class="text-4xl text-center">About Me</h2>
           </div>
           <div class="w-full flex items-center my-16 gap-5">
             <div class="w-1/2">
               <div class="w-full">
                 <div class="w-full bg-slate-100 mb-6 rounded-2xl">
-                <div class="bg-[#dd4b25] text-xs font-medium py-[1px] text-white text-center rounded-2xl" style="width: 80%"> HTML 80%</div>
+                <div class="bg-[#dd4b25] py-[1px] text-white text-center rounded-2xl" style="width: 80%"> HTML 80%</div>
                 </div>
                 <div class="w-full bg-slate-100 mb-6 rounded-2xl">
-                  <div class="bg-[#35b3eb] rounded-2xl text-xs font-medium py-[1px] text-slate-900 text-center" style="width: 75%">Tailwind 75%</div>
+                  <div class="bg-[#35b3eb] rounded-2xl py-[1px] text-slate-900 text-center" style="width: 75%">Tailwind 75%</div>
                   </div>
                 <div class="w-full bg-slate-100 mb-6 rounded-2xl"> 
-                <div class="bg-[#7209f5] rounded-2xl text-xs font-medium py-[1px] text-indigo-100 text-center" style="width: 60%">Bootstrap 60%</div>
+                <div class="bg-[#7209f5] rounded-2xl py-[1px] text-indigo-100 text-center" style="width: 60%">Bootstrap 60%</div>
                 </div>
                 
                 <div class="w-full bg-slate-100 mb-6 rounded-2xl">
-                <div class="bg-[#ead41c] rounded-2xl text-xs font-medium py-[1px] text-slate-900 text-center" style="width: 40%">JS 40%</div>
+                <div class="bg-[#ead41c] rounded-2xl py-[1px] text-slate-900 text-center" style="width: 40%">JS 40%</div>
                 </div>
                
               </div>
             </div>
-            <div class="w-1/2">
-              <h2 class="text-xl mb-3">Arman Khan </h2>
-              <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias ratione, cupiditate quaerat voluptatum quibusdam a ad sed hic magnam, accusamus unde voluptate excepturi eius rerum. Animi similique veritatis doloribus commodi! Quae itaque veritatis porro! Animi ut iure ab libero quisquam vitae consequatur commodi nemo eum, temporibus impedit. Aut, pariatur.</p>
-            </div>
+            <div class="w-1/2 flex gap-2">
+              <div>
+                <img src="./images/hero.png" alt="">
+              </div>
+              <div>
+                <h2 class="text-4xl mb-3">Arman Khan </h2>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias ratione, cupiditate quaerat voluptatum quibusdam a ad sed hic magnam, accusamus unde voluptate excepturi eius rerum. Animi similique veritatis doloribus commodi! Quae itaque veritatis porro! Animi ut iure ab libero quisquam vitae consequatur commodi nemo eum, temporibus impedit. Aut, pariatur.</p>
+             
+              </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
+    <hr class="container mx-auto border-[1px] border-solid border-slate-700">
+    <section class="my-20">
+      <div class="mb-20">
+        <h2 class="text-center text-3xl ">My Projects </h2>
+      </div>
+      <div class="container mx-auto my-20">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3">
+          <div>
+           <a href="#"> <img src="./images/project1.png" class="w-full h-full border-4 rounded-md" alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img src="./images/project2.jpeg" class="w-full h-full border-4 rounded-md" alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img src="./images/project3.jpeg" class="w-full h-full border-4 rounded-md" alt=""></a>
+          </div>
+          <div>
+           <a href="#"> <img src="./images/project4.jpeg" class="w-full h-full border-4 rounded-md" alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img src="./images/project6.jpeg" class="w-full h-full border-4 rounded-md" alt=""></a>
+          </div>
+          <div>
+           <a href="#"> <img src="./images/project5.png" class="w-full h-full border-4 rounded-md" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="container mx-auto border-[1px] border-solid border-slate-700">
 
+    <section>
+      <div class="wrapper">
+        <header>Send us a Message</header>
+        <form action="#">
+          <div class="dbl-field">
+            <div class="field">
+              <input type="text" name="name" placeholder="Enter your name">
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Enter your email">
+              <i class='fas fa-envelope'></i>
+            </div>
+          </div>
+          <div class="dbl-field">
+            <div class="field">
+              <input type="text" name="phone" placeholder="Enter your phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="website" placeholder="Enter your website">
+              <i class='fas fa-globe'></i>
+            </div>
+          </div>
+          <div class="message">
+            <textarea placeholder="Write your message" name="message"></textarea>
+            <i class="material-icons">message</i>
+          </div>
+          <div class="button-area">
+            <button type="submit">Send Message</button>
+            <span></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+<script src="./dist/particle.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<!-- stats.js lib --> 
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script>
+  //Contact Form in PHP
+const form = document.querySelector("form"),
+statusTxt = form.querySelector(".button-area span");
+form.onsubmit = (e)=>{
+  e.preventDefault();
+  statusTxt.style.color = "#0D6EFD";
+  statusTxt.style.display = "block";
+  statusTxt.innerText = "Sending your message...";
+  form.classList.add("disabled");
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "message.php", true);
+  xhr.onload = ()=>{
+    if(xhr.readyState == 4 && xhr.status == 200){
+      let response = xhr.response;
+      if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
+        statusTxt.style.color = "red";
+      }else{
+        form.reset();
+        setTimeout(()=>{
+          statusTxt.style.display = "none";
+        }, 3000);
+      }
+      statusTxt.innerText = response;
+      form.classList.remove("disabled");
+    }
+  }
+  let formData = new FormData(form);
+  xhr.send(formData);
+}
+</script>
 </body>
 
 </html>
