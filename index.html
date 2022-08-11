@@ -17,30 +17,64 @@
 <body class="bg-slate-900 text-white" id="particles-js">
   <main>
     <header id="home">
-      <nav class="fixed w-full top-0 bg-slate-800">
-        <div class="container mx-auto">
-          <div class="flex my-4">
-            <div>
-              <a href="#"> <img src="./images/logo.png" class="w-4/12" alt=""></a>
-            </div>
-            <div class="flex justify-center items-center">
-              <ul class="flex justify-between items-center gap-4">
-                <li><a class="hover:text-blue-500" href="#home">Home </a></li>
-                <li><a class="hover:text-blue-500" href="#about">About </a></li>
-                <li><a class="hover:text-blue-500" href="#project">Projects </a></li>
-                <li><a class="hover:text-blue-500" href="#contact">Contact </a></li>
-              </ul>
-            </div>
-          </div>
+      <nav class="bottom-0 md:fixed md:top-0 md:h-20  fixed bg-slate-900 shadow[1px -5px 9px -8px #ddd] w-full nav flex items-center justify-between px-4">
+        <div class="flex w-1/2 items-center md:mr-6 md:py-3 text-grey-darkest">
+         
+          <span class="md:w-1/2 font-semibold text-xl tracking-tight"><a href="#">
+            <img src="./images/logo.png" class="w-full" alt="">
+          </a></span>
         </div>
+      
+        <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+        <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+          <span class="navicon bg-grey-darkest flex items-center relative"></span>
+        </label>
+      
+        <ul class="menu text-slate-300 md:relative absolute grid grid-cols-3 -top-16 rounded-t-3xl md:top-0 md:bg-transparent bg-slate-700 left-0 w-full border-none md:flex md:justify-end list-reset m-0 md:w-auto">
+          <li class="flex justify-center text-center">
+            <a href="#" class="text-left block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">
+              <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden m-auto h-6 w-6 font-semibold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}> 
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>Home
+          </a>
+          </li>
+          
+          <li class="flex justify-center text-center">
+            <a href="#about" class="text-left block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">
+              <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden m-auto h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              About</a>
+          </li>
+          
+          <li class="flex justify-center text-center">
+            <a href="#project" class="text-left block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">
+              <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden m-auto h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Projects</a>
+          </li>
+          <!-- <li class="">
+            <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Home</a>
+          </li>
+          
+          <li class="">
+            <a href="#about" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
+          </li>
+          
+          <li class="">
+            <a href="#project" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Projects</a>
+          </li> -->
+          
+        </ul>
       </nav>
       <section class="mt-20 ">
-        <div class="container mx-auto flex justify-around items-center my-20">
-          <div>
-            <h2 class="text-2xl">Hi, I'm  <br><span class="text-6xl  text-blue-400">Arman Khan</span></h2>
+        <div class="md:container w-[90%] mx-auto sm:flex justify-between items-center my-20">
+          <div class="sm:w-1/2 w-full">
+            <h2 class="sm:text-xl text-center sm:text-left mb-6 sm:mb-0 text-lg md:text-2xl">Hi, I'm  <br><span class="text-4xl md:text-6xl  text-blue-400">Arman Khan</span></h2>
           </div>
-          <div>
-            <img src="./images/hero.png" class="w-5/6" alt="">
+          <div class="sm:w-1/2 w-full flex justify-center">
+            <img src="./images/hero.png" class="w-5/6 sm:w-full" alt="">
           </div>
         </div>
       </section>
@@ -50,10 +84,10 @@
       <div class="container mx-auto my-20">
         <div>
           <div>
-            <h2 class="text-4xl text-center">About Me</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl text-center">About Me</h2>
           </div>
-          <div class="w-full flex items-center my-16 gap-5">
-            <div class="w-1/2">
+          <div class="w-[90%] mx-auto sm:flex items-center my-16 gap-5">
+            <div class="w-full sm:w-1/2">
               <div class="w-full">
                 <div class="w-full bg-slate-100 mb-6 rounded-2xl">
                 <div class="bg-[#dd4b25] py-[1px] text-white text-center rounded-2xl" style="width: 80%"> HTML 80%</div>
@@ -71,7 +105,7 @@
                
               </div>
             </div>
-            <div class="w-1/2 flex gap-2">
+            <div class="w-full sm:w-1/2 flex gap-2">
               <div>
                 <img src="./images/hero.png" alt="">
               </div>
@@ -86,7 +120,7 @@
       </div>
     </section>
     <hr class="container mx-auto border-[1px] border-solid border-slate-700">
-    <section class="my-20">
+    <section class="my-20" id="project">
       <div class="mb-20">
         <h2 class="text-center text-3xl ">My Projects </h2>
       </div>
